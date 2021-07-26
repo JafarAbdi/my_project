@@ -1,0 +1,6 @@
+# Used with vcstool, users can download and source of all packages in this.
+repositories:
+  my_project:
+     type: git
+     url: git@github.com:PickNikRobotics/my_project.git
+     version: main
