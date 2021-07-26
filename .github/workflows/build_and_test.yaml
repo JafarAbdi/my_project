@@ -33,11 +33,6 @@ jobs:
       
     runs-on: ubuntu-latest
     steps:
-      - name: DockerHub Login
-        uses: docker/login-action@v1
-        with:
-          username: ${{ secrets.DOCKERHUB_USERNAME }}
-          password: ${{ secrets.DOCKERHUB_TOKEN }}
       - uses: actions/checkout@v2
       # This step will fetch/store the directory used by ccache before/after the ci run
       - uses: actions/cache@v2
